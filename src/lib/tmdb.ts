@@ -1,7 +1,7 @@
 const BASE_URL = "https://api.themoviedb.org/3";
 const TOKEN = process.env.TMDB_ACCESS_TOKEN;
 
-const fetchMovies = async (endpoint: string) => {
+export const fetchMovies = async (endpoint: string) => {
   // console.log("TOKEN:", TOKEN ? " Found" : " UNDEFINED - Check .env.local");
 
   const res = await fetch(`${BASE_URL}${endpoint}`, {
