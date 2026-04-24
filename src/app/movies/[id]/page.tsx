@@ -98,7 +98,7 @@ export default async function MovieDetailPage({
             </div>
             <div className="text-lg mt-3 text-blue-600 ">
               
-              <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+              <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
   Full Episode
 </button>
               </div>
