@@ -3,7 +3,8 @@ import { getMovieDetail, imageUrl, backdropUrl } from "@/lib/tmdb";
 export default async function MovieDetailPage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  // params: Promise<{ id: string }>;`
+  params: { id: string }
 }) {
   const { id } = await params;
   const movie = await getMovieDetail(id);
