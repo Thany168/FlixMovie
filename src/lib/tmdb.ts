@@ -3,6 +3,8 @@ const TOKEN = process.env.TMDB_ACCESS_TOKEN;
 
 export const fetchMovies = async (endpoint: string) => {
   // console.log("TOKEN:", TOKEN ? " Found" : " UNDEFINED - Check .env.local");
+    console.log("Fetching URL:", `${BASE_URL}${endpoint}`); // ← add this
+
 
   const res = await fetch(`${BASE_URL}${endpoint}`, {
     method: "GET",
@@ -34,3 +36,5 @@ export const imageUrl = (path: string, size = "w500") =>
 
 export const backdropUrl = (path: string) =>
   `https://image.tmdb.org/t/p/original${path}`;
+
+

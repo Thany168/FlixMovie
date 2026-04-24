@@ -17,8 +17,6 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 text-white">
           <Link href="/">Home</Link>
-          <Link href="/movies">Movies</Link>
-          <Link href="/tv">TV Shows</Link>
           <Link href="/popular">Popular</Link>
           <Link href="/top-rated">Top Rated</Link>
           <Link href="/my-list">My List</Link>

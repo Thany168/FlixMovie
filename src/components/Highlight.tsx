@@ -1,12 +1,13 @@
 import { imageUrl } from "@/lib/tmdb";
+import { Play, PlusIcon } from "lucide-react";
 
-export default function Hero({ movie }: any) {
+export default function Highlight({ movie }: any) {
   return (
-    <div className="relative h-[60vh] sm:h-[65vh] md:h-[75vh] max-w-7xl mx-auto rounded-xl overflow-hidden">
+    <div className="relative  h-[6vh] sm:h-[65vh] md:h-[75vh] max-w-7xl mx-auto  overflow-hidden">
       {/* Background Image */}
       <img
         src={imageUrl(movie.backdrop_path)}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover "
       />
 
       {/* Gradient Overlay */}
@@ -24,12 +25,12 @@ export default function Hero({ movie }: any) {
 
         {/* Buttons */}
         <div className="flex gap-4">
-          <button className="bg-white text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
-            ▶ Play
+          <button className="bg-white flex gap-1 text-black px-5 py-2 rounded-lg font-semibold hover:bg-gray-200 transition">
+            <Play /> Play
           </button>
 
-          <button className="bg-gray-700/70 px-5 py-2 rounded-lg font-semibold hover:bg-gray-600 transition">
-            + My List
+          <button className="bg-gray-700/70 flex gap-1 px-5 py-2 rounded-lg font-semibold hover:bg-gray-600 transition">
+            <PlusIcon /> My List
           </button>
         </div>
       </div>
