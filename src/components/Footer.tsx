@@ -2,14 +2,17 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-400 mt-16">
+    // <footer className="bg-black text-gray-400 mt-16 text-center ">
+    <footer className="bg-black text-gray-400 mt-16 flex flex-col items-center md:items-start text-center md:text-left">
       <div className="max-w-7xl mx-auto px-6 py-10">
         {/* Top Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
           {/* Column 1 */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Movie App</h3>
-            <p className="text-sm">
+            <h3 className="text-white font-semibold mb-4">
+              Power by Thany-Solution
+            </h3>
+            <p className="text-sm text-left">
               Watch and explore your favorite movies and TV shows anytime.
             </p>
           </div>
@@ -71,7 +74,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col sm:flex-row justify-between items-center text-sm">
-          <p>© 2026 Movie App. All rights reserved.</p>
+          <p>© 2026 Thany-Solution. All rights reserved.</p>
 
           <div className="flex space-x-4 mt-4 sm:mt-0">
             <Link href="#" className="hover:text-white">

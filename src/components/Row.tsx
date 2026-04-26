@@ -8,7 +8,7 @@ export default function Row({ title, movies }: any) {
       <div
         className="
           grid gap-4 gap-y-6
-          grid-cols-3
+          grid-cols-2
           sm:grid-cols-4
           md:grid-cols-4 
           lg:grid-cols-5
@@ -20,7 +20,7 @@ export default function Row({ title, movies }: any) {
             key={movie.id}
             className="transform transition duration-300 hover:scale-105 hover:z-10"
           >
-            <MovieCard movie={movie}   />
+            <MovieCard movie={movie} />
           </div>
         ))}
       </div>

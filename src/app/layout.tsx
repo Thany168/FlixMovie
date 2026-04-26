@@ -9,11 +9,11 @@ export const metadata = {
   openGraph: {
     title: "Movie App",
     description: "Discover and explore movies easily",
-    url: "https://flix-movie-pi.vercel.app/",
+    url: "https://flix-movie-kh.vercel.app/",
     siteName: "Movie App",
     images: [
       {
-        url: "https://flix-movie-pi.vercel.app/og-image.jpg",
+        url: "https://flix-movie-kh.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Movie App Preview",
@@ -26,7 +26,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Movie App",
     description: "Discover and explore movies easily",
-    images: ["https://flix-movie-pi.vercel.app/og-image.jpg"],
+    images: ["https://flix-movie-kh.vercel.app/og-image.jpg"],
   },
 };
 

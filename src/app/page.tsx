@@ -1,5 +1,5 @@
 import { getTrending, getPopular, getTopRated } from "@/lib/tmdb";
-import Hero from "@/components/Highlight";
+import Highlight from "@/components/Highlight";
 import Row from "@/components/Row";
 
 export default async function Home() {
@@ -10,9 +10,9 @@ export default async function Home() {
   ]);
 
   return (
-    <main className="bg-black min-h-screen">
-      <div className="">
-        <Hero movie={trending.results[1]} />
+    <main className="bg-black min-h-screen ">
+      <div className="relative pt-16 md:pt-20">
+        <Highlight movie={trending.results[2]} />
       </div>
       <div className="pb-10 space-y-8 relative ">
         <Row title=" Trending Now" movies={trending.results} />
