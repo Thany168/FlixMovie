@@ -14,15 +14,19 @@ interface Movie {
 
 export default function MovieCard({ movie }: { movie: Movie }) {
   return (
-    <Link href={`/movies/${movie.id}`} className="group block w-40 sm:w-48 md:w-56">
+    <Link
+      href={`/movies/${movie.id}`}
+      // className="group block w-40 sm:w-48 md:w-56 "
+      className="group block w-full max-w-[180px] sm:max-w-[200px] md:max-w-[220px]"
+    >
       {/* Poster */}
-      <div className="relative overflow-hidden rounded-xl shadow-lg bg-gray-900">
+      <div className="relative overflow-hidden rounded-xl shadow-lg bg-gray-900 ">
         <Image
           src={imageUrl(movie.poster_path)}
           alt={movie.title}
           width={224}
           height={336}
-          className="w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full object-cover transition-transform duration-300 group-hover:scale-105 "
         />
 
         {/* Rating Badge */}

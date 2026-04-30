@@ -13,12 +13,13 @@ export default function Row({ title, movies }: any) {
           md:grid-cols-4 
           lg:grid-cols-5
           xl:grid-cols-5
+        place-items-center
         "
       >
         {movies.map((movie: any) => (
           <div
             key={movie.id}
-            className="transform transition duration-300 hover:scale-105 hover:z-10"
+            className=" justify-center items-center transform transition duration-300 hover:scale-105 hover:z-10"
           >
             <MovieCard movie={movie} />
           </div>
